@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import CommandPalette from "../components/CommandPalette";
+import CommandPrompt from "../components/CommandPrompt";
 
 export const metadata: Metadata = {
   title: "Portfolio | Modern Developer",
@@ -14,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <CommandPrompt />
+        <CommandPalette />
+      </body>
     </html>
   );
 }

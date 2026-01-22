@@ -423,6 +423,69 @@ main {
   }
 }
 
+.command-prompt {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  z-index: 50;
+}
+
+.command-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  backdrop-filter: blur(4px);
+}
+
+.command-palette {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.5rem;
+  z-index: 100;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.command-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.command-input {
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  padding: 0.75rem;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.command-input:focus {
+  outline: none;
+  border-color: var(--text);
+}
+
 @media (max-width: 640px) {
   main {
     padding: 2rem 1rem 4rem;
@@ -434,5 +497,15 @@ main {
 
   .section {
     margin: 3rem 0;
+  }
+
+  .command-palette {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .command-prompt {
+    bottom: 1rem;
+    padding: 0.4rem 0.8rem;
   }
 }
