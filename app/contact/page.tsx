@@ -17,7 +17,7 @@ export default function ContactPage() {
 
         <Section id="contact" eyebrow="" title="Get in touch" style={{ marginTop: "3rem" }}>
           <p className="muted" style={{ marginBottom: "1.5rem", fontSize: "15px" }}>
-            I'm always excited to discuss anything tech-related or hearing about new opportunities.
+            I'm always excited to discuss anything tech-related or new opportunities.
           </p>
           <div className="contact">
             <div style={{ marginBottom: "0.5rem" }}>
