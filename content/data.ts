@@ -11,7 +11,7 @@ export const hero = {
   name: "Arjun Supramaniam",
   title: "Developer & student building thoughtful digital experiences.",
   blurb:
-    "I'm a third-year student studying informatics and data science at the University of Washington. I love developing systems, whether they're full-stack projects or tools used for medical trials.",
+    "Hey there. I'm a third-year student studying informatics and data science at the University of Washington. I love developing systems, whether they're full-stack projects or tools used for medical trials.",
   location: "Based wherever the wifi is strong."
 };
 
