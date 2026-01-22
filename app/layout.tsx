@@ -4,9 +4,9 @@ import CommandPalette from "../components/CommandPalette";
 import CommandPrompt from "../components/CommandPrompt";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Modern Developer",
+  title: "Arjun Supramaniam",
   description:
-    "Minimal, fast portfolio for a university student and aspiring developer."
+    "Informatics and Data Science student at UW. Full-stack developer, ML engineer, and software builder."
 };
 
 export default function RootLayout({
