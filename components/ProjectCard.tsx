@@ -15,6 +15,19 @@ export default function ProjectCard({ project, index }: Props) {
         <p className="muted" style={{ margin: "0 0 0.5rem", fontSize: "14px" }}>
           {project.summary}
         </p>
+        {project.details ? (
+          <details style={{ margin: "0 0 0.6rem" }}>
+            <summary style={{ cursor: "pointer", fontSize: "14px" }}>
+              Read more
+            </summary>
+            <div
+              className="muted"
+              style={{ whiteSpace: "pre-line", fontSize: "14px", marginTop: "0.4rem" }}
+            >
+              {project.details}
+            </div>
+          </details>
+        ) : null}
         <p className="muted" style={{ margin: "0 0 0.5rem", fontSize: "14px" }}>
           {project.tech.join(", ")}
         </p>

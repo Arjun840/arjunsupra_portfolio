@@ -5,6 +5,7 @@ export type Project = {
   githubLink: string;
   deployedLink?: string;
   note?: string;
+  details?: string;
 };
 
 export const hero = {
@@ -95,7 +96,9 @@ export const currentlyWorkingOn: Project[] = [
       "Automatic bill splitting app — Uses OCR, precise math, and a user-friendly interface to make social expense splitting effortless. Currently the MVP product is finished, which contains core functionalities such as short-term expense splitting, transparent math, and OCR receipt scanning capabilities. During the next quarter of development, we aim to implement more advanced features such as long-term expense splitting, and refined OCR accuracy.",
     tech: ["TypeScript", "React / React Native", "Python", "FastAPI", "OCR"],
     githubLink: "https://github.com/allenzheng15/divvy",
-    deployedLink: "https://github.com/allenzheng15/divvy"
+    deployedLink: "https://github.com/allenzheng15/divvy",
+    details:
+      "My Contributions and Takeaways\n\nBackend Design: Aided and helped create the FastAPI server and OCR pipeline in Python to automatically capture line items, minimizing user data input.\n\nFrontend Design: Aided and helped create the React Native UI for \"Transparent Math,\" ensuring that complex cost‑splitting algorithms were easy to understand.\n\nProject Management: Spearheaded the shift from Winter MVP to Spring project, including planning the technical stack and prioritizing features.\n\nTakeaway: Learned the art of moving fast while still writing high‑quality code in a long‑term project cycle."
   }
 ];
 
