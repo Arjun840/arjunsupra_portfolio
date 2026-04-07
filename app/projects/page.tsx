@@ -1,7 +1,7 @@
 import NavBar from "../../components/NavBar";
 import Section from "../../components/Section";
 import ProjectCard from "../../components/ProjectCard";
-import { hero, projects } from "../../content/data";
+import { hero, selectedWork, currentlyWorkingOn } from "../../content/data";
 
 export default function ProjectsPage() {
   return (
@@ -18,7 +18,20 @@ export default function ProjectsPage() {
 
         <Section id="projects" eyebrow="" title="Selected Work" style={{ marginTop: "3rem" }}>
           <div className="grid projects">
-            {projects.map((project) => (
+            {selectedWork.map((project) => (
+              <ProjectCard key={project.title} project={project} index={0} />
+            ))}
+          </div>
+        </Section>
+
+        <Section
+          id="currently-working-on"
+          eyebrow=""
+          title="Currently Working On"
+          style={{ marginTop: "3rem" }}
+        >
+          <div className="grid projects">
+            {currentlyWorkingOn.map((project) => (
               <ProjectCard key={project.title} project={project} index={0} />
             ))}
           </div>

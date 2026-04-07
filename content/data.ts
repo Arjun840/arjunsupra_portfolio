@@ -52,7 +52,7 @@ export const skills = {
   ]
 };
 
-export const projects: Project[] = [
+export const selectedWork: Project[] = [
   {
     title: "PortfolioMax",
     summary:
@@ -85,6 +85,17 @@ export const projects: Project[] = [
     githubLink: "https://github.com/stevezhuyc/BON-AiPPETIT",
     deployedLink: "https://github.com/stevezhuyc/BON-AiPPETIT",
     note: "Link to teammate's repository"
+  }
+];
+
+export const currentlyWorkingOn: Project[] = [
+  {
+    title: "Divvy (Informatics Capstone Project)",
+    summary:
+      "Automatic bill splitting app — Uses OCR, precise math, and a user-friendly interface to make social expense splitting effortless. Currently the MVP product is finished, which contains core functionalities such as short-term expense splitting, transparent math, and OCR receipt scanning capabilities. During the next quarter of development, we aim to implement more advanced features such as long-term expense splitting, and refined OCR accuracy.",
+    tech: ["TypeScript", "React / React Native", "Python", "FastAPI", "OCR"],
+    githubLink: "https://github.com/allenzheng15/divvy",
+    deployedLink: "https://github.com/allenzheng15/divvy"
   }
 ];
 
